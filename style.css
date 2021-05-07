@@ -1,0 +1,87 @@
+/*GLOBAL  ==========================================================*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background: #F0F2F5;
+    font: 62.5% 'Poppins', sans-serif;
+}
+/*CSS Tricks to hide the h2 texts for the users, but keep it for apps readers*/
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+}
+
+/*HEADER  ==========================================================*/
+#headertop {
+    padding: 0.5rem 1rem;
+}
+#dollarbill {
+    width: 1rem;
+    height: 1rem;
+    margin: 0 0.5rem;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+/*MAIN =============================================================*/
+#exchange {
+    margin-top: 15%;
+    display: grid;
+    justify-content: center;
+}
+#maincoin {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.svgcoin {
+    width: 6rem;
+    height: 6rem;
+    margin-bottom: 2rem;
+}
+#quotation {
+    font-size: 1.4em;
+    color: #3398CB;
+    letter-spacing: 0.05em;
+    margin: .7em .9em .5em .9em;
+}
+.quotCoin {
+    font-size: 3em;
+    color: #C8C8C8;
+    position: relative;
+}
+.quotCoin,
+input#foreign,
+input#national {
+    background: transparent;
+}
+input#foreign {
+    margin-left: 0;
+    text-align: right;
+}
+input#foreign,
+input#national {
+    border: 0;
+    color: #999;
+    width: 2.3em;
+    font-size: 1em;
+}
+
+/*RESPONSIVE  ======================================================*/
+@media (min-width: 640px) {
+    section #exchange {
+        font-size: 62.5%;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+    }
+}
