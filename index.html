@@ -7,23 +7,160 @@
         <link rel="stylesheet" href="./style.css">
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;1,100;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" />
         <title>Meu Dólar</title>
     </head>
 
     <body>
-        <header id="headertop">
-            <div>
-                <span id="top">MeuDolar.com</span>
-                <img id="dollarbill" src="https://img.icons8.com/cotton/64/000000/currency-exchange.png" alt="nota de dólar">
-                <span>Dólar</span>
-            </div>
-        </header>
+        <header>
+            <div id="header">
+              <span>
+                <span>Meu Dólar</span>
+                <img src="./assets/money-dollar.svg" alt="" class="quotation">
+              </span>
+              <div class="navigation">
+                <div class="toggle" onclick="DOM.openMenu()">
+                    <img src="./assets/total.svg" alt="" class="dollar-sign">
+                </div>
+                <ul>
+                    <li>
+                        <a href="#">
+                            <span class="icon"><i class="fa fa-usd" aria-hidden="true"></i></span>
+                            <h3 class="title">Principais</h3>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="coins">Dólar</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="coins">Euro</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="coins">Ouro</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="coins">Bitcoin</span>
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="#">
+                            <span class="icon"><i class="fa fa-plane" aria-hidden="true"></i></span>
+                            <h3 class="title">Turismo</h3>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="coins">Dólar Turismo</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="coins">Euro Turismo</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            <span class="icon"><i class="fa fa-money" aria-hidden="true"></i></span>
+                            <h3 class="title">Moedas Convencionais</h3>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="coins">Dólar Australiano</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="coins">Dólar Canadense</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="coins">Dólar Neozelandes</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="coins">Franco Suiço</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="coins">Libra</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            <span class="icon"><i class="fa fa-line-chart" aria-hidden="true"></i></span>
+                            <h3 class="title">Moedas Latinas</h3>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="coins">Novo Sol</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="coins">Peso Argentino</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="coins">Peso Chileno</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="coins">Peso Uruguaio</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            <span class="icon"><i class="fa fa-jpy" aria-hidden="true"></i></span>
+                            <h3 class="title">Asia e Russia</h3>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="coins">Iene</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="coins">Rublo</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="coins">Won Sul-Coreano</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="coins">Yuan</span>
+                        </a>
+                    </li>
+                </ul>
+              </div>         
+          </header>
 
         <main>
             <section id="exchange">
                 <div id="maincoin">
                     <h1 class="sr-only">Euro</h1>
-                    <img class="svgcoin" src="euro-svgrepo.svg" alt="Euro">
+                    <img class="svgcoin" src="./assets/euro-svgrepo.svg" alt="Euro">
                 </div>
                 <div id="quotation">
                     <span class="quotCoin">
@@ -43,4 +180,6 @@
 
         </footer>
     </body>
+
+    <script src="scripts.js"></script>
 </html>
